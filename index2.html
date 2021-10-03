@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+    <h1>Hola Mundo</h1>
+    <input type="text" id="color" />
+    <button onclick="cambiarColor()">Aceptar</button>
+    <div id="contenido">
+
+    </div>
+    
+    </body>
+    <script type="text/javascript">
+        var contenido = document.getElementById("contenido");
+        contenido.innerHTML = "Hola Mundito";
+        contenido.style.backgroundColor="yellow";
+        contenido.style.width=200+"px";
+
+        function cambiarColor(){
+            var color=document.getElementById("color").value;
+            console.log(color);
+            contenido.style.backgroundColor=color;
+        }
+    </script>
+</html>
